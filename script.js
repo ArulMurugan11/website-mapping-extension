@@ -3,16 +3,15 @@ if (sub) {
   sub.addEventListener('click', checkWebsite);
 }
 const websites = {
-  finance: 'www.bctfinance.com',
-  ssg: 'www.bctfssg.com',
-  bct: 'www.bct.com',
-  admin: 'www.bctadmin.com',
-  sales: 'www.bctsales.com',
+  ess: 'https://ess.bahwancybertek.com/bctc',
+  tms: 'https://tms.bahwancybertek.com/mainMenus',
+  ebuddy: 'https://ebuddy.bahwancybertek.com/eBuddy/',
 };
+websites['bct-attendance'] =
+  'https://bctprodapps.bahwancybertek.com/OA_HTML/AppsLocalLogin.jsp';
+
 function checkWebsite() {
   var input = document.getElementById('textField').value;
-  // const value = eval(input)
-  //   if(websites[input.toLowercase()])
   console.log('here');
   console.log(input);
   console.log(location);
@@ -22,9 +21,9 @@ function checkWebsite() {
   console.log(websites[input]);
 
   let queryParams = new URLSearchParams(window.location.search);
-  let ourValue = queryParams.get('q');
-  console.log('ourValue serached is');
-  console.log(ourValue);
+  let searchedKey = queryParams.get('q');
+  console.log('searchedKey is');
+  console.log(searchedKey);
 
   if (websites[input.toLowerCase()]) {
     document.getElementById('textField').value = websites[input.toLowerCase()];

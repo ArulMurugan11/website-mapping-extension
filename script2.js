@@ -1,16 +1,17 @@
 const websites = {
-  finance: 'www.bctfinance.com',
-  ssg: 'www.bctfssg.com',
-  bct: 'www.bct.com',
-  admin: 'www.bctadmin.com',
-  sales: 'www.bctsales.com',
+  ess: 'https://ess.bahwancybertek.com/bctc',
+  tms: 'https://tms.bahwancybertek.com/mainMenus',
+  ebuddy: 'https://ebuddy.bahwancybertek.com/eBuddy/',
 };
+websites['bct-attendance'] =
+  'https://bctprodapps.bahwancybertek.com/OA_HTML/AppsLocalLogin.jsp';
+
 console.log('window.location.href');
 console.log(window.location.href);
-let queryParams = new URLSearchParams(window.location.search);
-let ourValue = queryParams.get('q');
-console.log('ourValue serached is');
-console.log(ourValue);
+const queryParams = new URLSearchParams(window.location.search);
+const searchedKey = queryParams.get('q');
+console.log('searchedKey serached is');
+console.log(searchedKey);
 // setTimeout(() => {window.stop()});
 // window.stop();
 
@@ -22,19 +23,14 @@ console.log(ourValue);
 //     window.location.href = `${websites[ourValue.toLowerCase()]}`;
 //   }
 // }
-// function preventDefaultBehavior(event) {
-//   event.preventDefault();
-//   event.returnValue = '';
-// }
-// window.addEventListener('beforeunload', preventDefaultBehavior);
 
-if (ourValue) {
-  if (websites[ourValue.toLowerCase()]) {
+if (searchedKey) {
+  if (websites[searchedKey.toLowerCase()]) {
     console.log('window.location.href isss');
     console.log(window.location.href);
-    // window.location.href = `${websites[ourValue.toLowerCase()]}`;
+    // window.location.href = `${websites[searchedKey.toLowerCase()]}`;
     console.log('window.location.href after isss');
     console.log(window.location.href);
-    console.log(websites[ourValue.toLowerCase()]);
+    console.log(websites[searchedKey.toLowerCase()]);
   }
 }

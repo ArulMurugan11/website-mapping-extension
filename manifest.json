@@ -30,12 +30,7 @@
       }
     ]
   },
-  "permissions": [
-    "activeTab",
-    "storage",
-    "declarativeNetRequest",
-    "declarativeNetRequestWithHostAccess"
-  ],
+  "permissions": ["activeTab", "storage", "declarativeNetRequest"],
   "host_permissions": [
     "*://*.google.com/*",
     "https://www.google.com/*",

@@ -25,27 +25,32 @@
     "priority": 2,
     "action": {
       "type": "redirect",
-      "redirect": { "url": "https://bctfinance.com" }
+      "redirect": { "url": "https://tms.bahwancybertek.com/mainMenus" }
     },
-    "condition": { "urlFilter": "q=finance&", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "q=tms&", "resourceTypes": ["main_frame"] }
   },
   {
     "id": 5,
     "priority": 2,
     "action": {
       "type": "redirect",
-      "redirect": { "url": "https://bctsales.com" }
+      "redirect": { "url": "https://ebuddy.bahwancybertek.com/eBuddy/" }
     },
-    "condition": { "urlFilter": "q=sales&", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "q=ebuddy&", "resourceTypes": ["main_frame"] }
   },
   {
     "id": 6,
     "priority": 2,
     "action": {
       "type": "redirect",
-      "redirect": { "url": "https://bct.com" }
+      "redirect": {
+        "url": "https://bctprodapps.bahwancybertek.com/OA_HTML/AppsLocalLogin.jsp"
+      }
     },
-    "condition": { "urlFilter": "q=bct&", "resourceTypes": ["main_frame"] }
+    "condition": {
+      "urlFilter": "q=bct-attendance&",
+      "resourceTypes": ["main_frame"]
+    }
   },
   {
     "id": 7,
