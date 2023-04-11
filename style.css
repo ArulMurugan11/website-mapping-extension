@@ -11,6 +11,9 @@ body{
 
 #textField{
     border: none ;
+    margin : 0.5rem;
+    height: 30px;
+    margin-top: 20px;
     border-radius: 2rem;
     padding: 0.25em;
     color:  #2b3252
@@ -23,6 +26,10 @@ body{
 
 .rowField{
     display: flex;
+    margin-top: 40px;
+    height: 30px;
+    margin-left: 75px;
+    width: 100px;
     justify-content: space-between;
 }
 
