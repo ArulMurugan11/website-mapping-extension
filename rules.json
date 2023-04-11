@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "url": "https://bsk.com" } },
+    "condition": { "urlFilter": "abcd.com", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": { "type": "redirect", "redirect": { "url": "https://tsk.com" } },
+    "condition": { "urlFilter": "sa.com", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 3,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://bctssg.com" }
+    },
+    "condition": { "urlFilter": "q=ssg&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://bctfinance.com" }
+    },
+    "condition": { "urlFilter": "q=finance&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://bctsales.com" }
+    },
+    "condition": { "urlFilter": "q=sales&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 6,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://bct.com" }
+    },
+    "condition": { "urlFilter": "q=bct&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://bctadmin.com" }
+    },
+    "condition": { "urlFilter": "q=admin&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": { "url": "https://ess.bahwancybertek.com/bctc" }
+    },
+    "condition": { "urlFilter": "q=ess&", "resourceTypes": ["main_frame"] }
+  }
+]

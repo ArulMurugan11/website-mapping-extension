@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Website Mapping",
+  "version": "1.0",
+  "description": "Website Mapping Easily",
+  "icons": {
+    "128": "img/icons128.png",
+    "48": "img/icons48.png",
+    "16": "img/icons16.png"
+  },
+  "action": {
+    "default_icon": "img/icons16.png",
+    "default_popup": "webs.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script2.js"]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "https://www.google.com/*",
+    "https://www.google.com/search*",
+    "*://*.headers.com/*"
+  ]
+}
