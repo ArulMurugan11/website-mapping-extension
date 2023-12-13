@@ -34,7 +34,9 @@
   "host_permissions": [
     "*://*.google.com/*",
     "https://www.google.com/*",
+    "https://www.bing.com/*",
     "https://www.google.com/search*",
-    "*://*.headers.com/*"
+    "*://*.headers.com/*",
+    "https://www.youtube.com/"
   ]
 }

@@ -69,5 +69,16 @@
       "redirect": { "url": "https://ess.bahwancybertek.com/bctc" }
     },
     "condition": { "urlFilter": "q=ess&", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 9,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "youtube.com",
+      "resourceTypes": ["main_frame"]
+    }
   }
 ]
